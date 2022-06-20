@@ -57,7 +57,7 @@ body {
 }
 
 .btn__outline {
-    display: inline-flex;
+  display: inline-flex;
   padding: 11px 24px;
   border-radius: 4px;
   font-weight: 400;
@@ -66,5 +66,30 @@ body {
   &:hover {
     color: $neutral-dark;
     transition: 0.3s all ease;
+  }
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: $primary;
+
+  @media (max-width: $breakpoint-lg) {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 26px;
+  }
+}
+.section__subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 15px;
+  color: $secondary;
+  @media (max-width: $breakpoint-sm) {
+    margin-top: 10px;
   }
 }
