@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Metropolis', monospace;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: ($containerWidth + $containerPadding) + px;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: none;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  gap: 7px;
+  padding: 11px 24px;
+  border-radius: 4px;
+  font-weight: 400;
+  background: $neutral;
+  color: white;
+
+  &:hover {
+    background: $neutral-dark;
+    transition: 0.3s all ease;
+
+    svg {
+      transform: translate(3px, -3px);
+      transition: 0.3s all ease;
+    }
+  }
+}
+
+.btn__outline {
+    display: inline-flex;
+  padding: 11px 24px;
+  border-radius: 4px;
+  font-weight: 400;
+  color: $neutral;
+
+  &:hover {
+    color: $neutral-dark;
+    transition: 0.3s all ease;
+  }
+}
