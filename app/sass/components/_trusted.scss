@@ -1,0 +1,38 @@
+.section {
+  &__trusted {
+    background: #fafafa;
+    padding: 50px 0;
+
+    @media (max-width: $breakpoint-sm) {
+      padding: 35px 0;
+    }
+  }
+}
+
+.trusted {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6px;
+  column-gap: 65px;
+  @media (max-width: $breakpoint-md) {
+    column-gap: 35px;
+  }
+  @media (max-width: $breakpoint-sm) {
+    column-gap: 20px;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  &__item {
+    margin-top: 40px;
+
+    @media (max-width: $breakpoint-lg) {
+      margin-top: 20px;
+    }
+  }
+}
